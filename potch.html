@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style2.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
 	<title>Poçtap</title>
 </head>
@@ -55,16 +56,42 @@
                     <div class="col3 col_offset_3">
                         <div class="search">
                             <p>SƏNƏD AXTAR</p>
-                            <small><i class="fa fa-exclamation-circle icon" aria-hidden="true"></i>Məlumatlar yalnız sənəddə olduğu kimi daxil edilməlidir.</small>
+                            <div class="warning">
+                            	<div class="col1">
+	                            	<i class="fa fa-exclamation-circle icon" aria-hidden="true"></i>
+	                            </div>
+	                            <div class="col10">
+	                            	<small>Məlumatlar yalnız sənəddə olduğu kimi daxil edilməlidir.</small>
+	                            </div>
+	                            <div class="clear"></div>
+                            </div>
+                            <div class="selection">
+                            	<select name="document_type" id="docs">
+                            		<option value="1"> - Senedin grupu -</option>
+                            		<option value="2">Vesiqeler</option>
+                            		<option value="3">Vergi senedleri</option>
+                            		<option value="4">Gomruk senedleri</option>
+                            		<option value="5">Diger senedler</option>
+                            	</select>
+                            	<div class="inputs">                            		
+                            		<input type="text" placeholder="SOYADI *">
+                            		<input type="text" placeholder="ADI *">                
+                            	</div>
+
+                            	<div class="axtar">
+                            		<h3>AXTAR</h3>
+                            	</div>
+                            </div>                         
                         </div>
+                        <div class="clear"></div>
                     </div>  
                     <div class="clear"></div>
                 </div>
-            </div>
+            </div>          
 
-                <div class="map">
-                    <img src="img/map.png" alt="Alternate Text" />
-                </div> 
+            <div class="map">
+                <img src="img/map.png" alt="Alternate Text" />
+            </div> 
             
 		</div>
 		<div class="content">
@@ -263,7 +290,7 @@
 					<div class="col4">
 						<div class="melumat">
 							<div class="image">
-								<img src="img/3.png" alt="">
+								<img style="width: 40%;" alt="" src="img/3.png">
 							</div>
 							<div class="text">
 								<b>Əgər vətəndaşla əlaqə saxlanılmışdırsa vətəndaş onadeyilən poçt şöbəsinə yaxınlaşaraq sənədini əldə edə bilər</b>
